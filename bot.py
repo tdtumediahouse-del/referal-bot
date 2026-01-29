@@ -9,7 +9,7 @@ import os
 # ==========================================
 BOT_TOKEN = os.getenv("8205914721:AAFkrlLErg2JOxG4z_iFVSipNuMQrcxZ0oU")  # Railwayda buni Variables bo'limiga yozasiz
 ADMIN_ID = int(os.getenv("5390578467", "0")) 
-CHANNEL_ID = int(os.getenv("1001611294866", "0")) # Masalan: -100123456789
+CHANNEL_ID = int(os.getenv("-1001611294866", "0")) # Masalan: -100123456789
 CHANNEL_USERNAME = os.getenv("@mirsoat_club") # Masalan: @kanal_useri
 
 bot = telebot.TeleBot(BOT_TOKEN, parse_mode="HTML")
@@ -258,3 +258,4 @@ def track_exit(update: types.ChatMemberUpdated):
         conn.close()
 
 bot.infinity_polling(allowed_updates=['message', 'callback_query', 'chat_member'])
+
